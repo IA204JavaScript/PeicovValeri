@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Инвентарь</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Система инвентаря</h1>
+
+  <!-- Форма -->
+  <form id="item-form">
+    <input type="text" id="name" placeholder="Название" required />
+    <select id="category">
+      <option value="weapon">Оружие</option>
+      <option value="armor">Броня</option>
+      <option value="potion">Зелье</option>
+    </select>
+    <select id="rarity">
+      <option value="common">Обычный</option>
+      <option value="uncommon">Необычный</option>
+      <option value="rare">Редкий</option>
+      <option value="legendary">Легендарный</option>
+    </select>
+    <input type="text" id="description" placeholder="Описание" required />
+    <input type="number" id="damage" placeholder="Урон (если оружие)" />
+    <button type="submit">Добавить предмет</button>
+  </form>
+
+  <!-- Таблица -->
+  <table id="inventory-table">
+    <thead>
+      <tr>
+        <th>Название</th>
+        <th>Категория</th>
+        <th>Редкость</th>
+        <th>Урон</th>
+        <th>Действие</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <p>Всего предметов: <span id="total-count">0</span></p>
+  <div id="item-info"></div>
+
+  <script type="module" src="./src/index.js"></script>
+</body>
+</html>

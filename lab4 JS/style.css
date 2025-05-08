@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  td, th {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  tr:hover {
+    background-color: #f0f0f0;
+  }
+  
+  form input, form select, form button {
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  #item-info {
+    margin-top: 15px;
+    font-style: italic;
+    color: #444;
+  }
+  
